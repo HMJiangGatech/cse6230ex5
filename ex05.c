@@ -18,9 +18,13 @@ int splitCommunicator(MPI_Comm comm, int firstCommSize, MPI_Comm *subComm_p)
    * `notes/mpi/dmv` example.
    */
   int color, rank, err;
+  MPI_LOG(rank,"1");
   err = MPI_Comm_rank(comm, &rank); MPI_CHK(err);
+  MPI_LOG(rank,"2");
   color = (rank >= firstCommSize);
+  MPI_LOG(rank,"3");
   err = MPI_Comm_split(comm, color, rank, subComm_p); MPI_CHK(err);
+  MPI_LOG(rank,"4");
   return 0;
 }
 
@@ -74,7 +78,7 @@ int main(int argc, char **argv)
   MPI_Comm comm;
   int      err;
   int      size, rank;
-  int      maxSize = 1 << 24;
+  int      maxSize = 1 << 16;
   int      maxCollectiveSize;
   int      numTests = 10;
   char     *buffer;
@@ -171,6 +175,7 @@ int main(int argc, char **argv)
     MPI_Comm subComm = MPI_COMM_NULL;
 
     err = splitCommunicator(MPI_COMM_WORLD, numComm, &subComm); MPI_CHK(err);
+    MPI_LOG(rank,"5");
     for (int numBytes = 8; numBytes <= maxSize; numBytes *= 8) {
       double        timeAvg = 0.;
       long long int totalNumBytes = numBytes * (numComm - 1);
@@ -255,10 +260,11 @@ int main(int argc, char **argv)
            * results in `buffer` on process 0 (HINT: look up the proper usage of
            * MPI_IN_PLACE).
            */
-          // if(rank == 0){
-          //   err = MPI_Reduce(buffer, MPI_IN_PLACE, numBytes, MPI_CHAR, MPI_MIN, 0, subComm); MPI_CHK(err);
-          // }
-          err = MPI_Reduce(buffer, buffer2, numBytes, MPI_CHAR, MPI_MIN, 0, subComm); MPI_CHK(err);
+          if(rank == 0){
+            err = MPI_Reduce(MPI_IN_PLACE, buffer, numBytes, MPI_CHAR, MPI_MIN, 0, subComm); MPI_CHK(err);
+          }else{
+            err = MPI_Reduce(buffer, buffer, numBytes, MPI_CHAR, MPI_MIN, 0, subComm); MPI_CHK(err);
+          }
         }
         err = stopTime(tic, &tic); MPI_CHK(err);
         if (t) {
