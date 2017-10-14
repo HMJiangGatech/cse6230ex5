@@ -1,0 +1,319 @@
+/home1/05215/tg845149/cse6230ex5
+c455-003.stampede2.tacc.utexas.edu
+Fri Oct 13 23:37:56 CDT 2017
+mpicc  -g -Wall -O3 -c -o ex05.o ex05.c
+mpicc -o ex05 ex05.o 
+ibrun tacc_affinity ./ex05 #/home1/05215/tg845149/cse6230ex5/ex05
+TACC:  Starting up job 334036 
+TACC:  Starting parallel tasks... 
+MPI Version: 3.1
+Intel(R) MPI Library 2017 Update 3 for Linux* OS
+
+MPI # Procs: 272
+MPI Wtime 1.50796e+09, precision 1e-06
+MPI Wtime is global
+MPI proc 0 host: c455-003.stampede2.tacc.utexas.edu
+MPI proc 1 host: c455-003.stampede2.tacc.utexas.edu
+MPI proc 2 host: c455-003.stampede2.tacc.utexas.edu
+MPI proc 3 host: c455-003.stampede2.tacc.utexas.edu
+MPI proc 4 host: c455-003.stampede2.tacc.utexas.edu
+MPI proc 5 host: c455-003.stampede2.tacc.utexas.edu
+MPI proc 6 host: c455-003.stampede2.tacc.utexas.edu
+MPI proc 7 host: c455-003.stampede2.tacc.utexas.edu
+MPI proc 8 host: c455-003.stampede2.tacc.utexas.edu
+MPI proc 9 host: c455-003.stampede2.tacc.utexas.edu
+MPI proc 10 host: c455-003.stampede2.tacc.utexas.edu
+MPI proc 11 host: c455-003.stampede2.tacc.utexas.edu
+MPI proc 12 host: c455-003.stampede2.tacc.utexas.edu
+MPI proc 13 host: c455-003.stampede2.tacc.utexas.edu
+MPI proc 14 host: c455-003.stampede2.tacc.utexas.edu
+MPI proc 15 host: c455-003.stampede2.tacc.utexas.edu
+MPI proc 16 host: c455-003.stampede2.tacc.utexas.edu
+MPI proc 17 host: c455-003.stampede2.tacc.utexas.edu
+MPI proc 18 host: c455-003.stampede2.tacc.utexas.edu
+MPI proc 19 host: c455-003.stampede2.tacc.utexas.edu
+MPI proc 20 host: c455-003.stampede2.tacc.utexas.edu
+MPI proc 21 host: c455-003.stampede2.tacc.utexas.edu
+MPI proc 22 host: c455-003.stampede2.tacc.utexas.edu
+MPI proc 23 host: c455-003.stampede2.tacc.utexas.edu
+MPI proc 24 host: c455-003.stampede2.tacc.utexas.edu
+MPI proc 25 host: c455-003.stampede2.tacc.utexas.edu
+MPI proc 26 host: c455-003.stampede2.tacc.utexas.edu
+MPI proc 27 host: c455-003.stampede2.tacc.utexas.edu
+MPI proc 28 host: c455-003.stampede2.tacc.utexas.edu
+MPI proc 29 host: c455-003.stampede2.tacc.utexas.edu
+MPI proc 30 host: c455-003.stampede2.tacc.utexas.edu
+MPI proc 31 host: c455-003.stampede2.tacc.utexas.edu
+MPI proc 32 host: c455-003.stampede2.tacc.utexas.edu
+MPI proc 33 host: c455-003.stampede2.tacc.utexas.edu
+MPI proc 34 host: c455-003.stampede2.tacc.utexas.edu
+MPI proc 35 host: c455-003.stampede2.tacc.utexas.edu
+MPI proc 36 host: c455-003.stampede2.tacc.utexas.edu
+MPI proc 37 host: c455-003.stampede2.tacc.utexas.edu
+MPI proc 38 host: c455-003.stampede2.tacc.utexas.edu
+MPI proc 39 host: c455-003.stampede2.tacc.utexas.edu
+MPI proc 40 host: c455-003.stampede2.tacc.utexas.edu
+MPI proc 41 host: c455-003.stampede2.tacc.utexas.edu
+MPI proc 42 host: c455-003.stampede2.tacc.utexas.edu
+MPI proc 43 host: c455-003.stampede2.tacc.utexas.edu
+MPI proc 44 host: c455-003.stampede2.tacc.utexas.edu
+MPI proc 45 host: c455-003.stampede2.tacc.utexas.edu
+MPI proc 46 host: c455-003.stampede2.tacc.utexas.edu
+MPI proc 47 host: c455-003.stampede2.tacc.utexas.edu
+MPI proc 48 host: c455-003.stampede2.tacc.utexas.edu
+MPI proc 49 host: c455-003.stampede2.tacc.utexas.edu
+MPI proc 50 host: c455-003.stampede2.tacc.utexas.edu
+MPI proc 51 host: c455-003.stampede2.tacc.utexas.edu
+MPI proc 52 host: c455-003.stampede2.tacc.utexas.edu
+MPI proc 53 host: c455-003.stampede2.tacc.utexas.edu
+MPI proc 54 host: c455-003.stampede2.tacc.utexas.edu
+MPI proc 55 host: c455-003.stampede2.tacc.utexas.edu
+MPI proc 56 host: c455-003.stampede2.tacc.utexas.edu
+MPI proc 57 host: c455-003.stampede2.tacc.utexas.edu
+MPI proc 58 host: c455-003.stampede2.tacc.utexas.edu
+MPI proc 59 host: c455-003.stampede2.tacc.utexas.edu
+MPI proc 60 host: c455-003.stampede2.tacc.utexas.edu
+MPI proc 61 host: c455-003.stampede2.tacc.utexas.edu
+MPI proc 62 host: c455-003.stampede2.tacc.utexas.edu
+MPI proc 63 host: c455-003.stampede2.tacc.utexas.edu
+MPI proc 64 host: c455-003.stampede2.tacc.utexas.edu
+MPI proc 65 host: c455-003.stampede2.tacc.utexas.edu
+MPI proc 66 host: c455-003.stampede2.tacc.utexas.edu
+MPI proc 67 host: c455-003.stampede2.tacc.utexas.edu
+MPI proc 68 host: c455-003.stampede2.tacc.utexas.edu
+MPI proc 69 host: c455-003.stampede2.tacc.utexas.edu
+MPI proc 70 host: c455-003.stampede2.tacc.utexas.edu
+MPI proc 71 host: c455-003.stampede2.tacc.utexas.edu
+MPI proc 72 host: c455-003.stampede2.tacc.utexas.edu
+MPI proc 73 host: c455-003.stampede2.tacc.utexas.edu
+MPI proc 74 host: c455-003.stampede2.tacc.utexas.edu
+MPI proc 75 host: c455-003.stampede2.tacc.utexas.edu
+MPI proc 76 host: c455-003.stampede2.tacc.utexas.edu
+MPI proc 77 host: c455-003.stampede2.tacc.utexas.edu
+MPI proc 78 host: c455-003.stampede2.tacc.utexas.edu
+MPI proc 79 host: c455-003.stampede2.tacc.utexas.edu
+MPI proc 80 host: c455-003.stampede2.tacc.utexas.edu
+MPI proc 81 host: c455-003.stampede2.tacc.utexas.edu
+MPI proc 82 host: c455-003.stampede2.tacc.utexas.edu
+MPI proc 83 host: c455-003.stampede2.tacc.utexas.edu
+MPI proc 84 host: c455-003.stampede2.tacc.utexas.edu
+MPI proc 85 host: c455-003.stampede2.tacc.utexas.edu
+MPI proc 86 host: c455-003.stampede2.tacc.utexas.edu
+MPI proc 87 host: c455-003.stampede2.tacc.utexas.edu
+MPI proc 88 host: c455-003.stampede2.tacc.utexas.edu
+MPI proc 89 host: c455-003.stampede2.tacc.utexas.edu
+MPI proc 90 host: c455-003.stampede2.tacc.utexas.edu
+MPI proc 91 host: c455-003.stampede2.tacc.utexas.edu
+MPI proc 92 host: c455-003.stampede2.tacc.utexas.edu
+MPI proc 93 host: c455-003.stampede2.tacc.utexas.edu
+MPI proc 94 host: c455-003.stampede2.tacc.utexas.edu
+MPI proc 95 host: c455-003.stampede2.tacc.utexas.edu
+MPI proc 96 host: c455-003.stampede2.tacc.utexas.edu
+MPI proc 97 host: c455-003.stampede2.tacc.utexas.edu
+MPI proc 98 host: c455-003.stampede2.tacc.utexas.edu
+MPI proc 99 host: c455-003.stampede2.tacc.utexas.edu
+MPI proc 100 host: c455-003.stampede2.tacc.utexas.edu
+MPI proc 101 host: c455-003.stampede2.tacc.utexas.edu
+MPI proc 102 host: c455-003.stampede2.tacc.utexas.edu
+MPI proc 103 host: c455-003.stampede2.tacc.utexas.edu
+MPI proc 104 host: c455-003.stampede2.tacc.utexas.edu
+MPI proc 105 host: c455-003.stampede2.tacc.utexas.edu
+MPI proc 106 host: c455-003.stampede2.tacc.utexas.edu
+MPI proc 107 host: c455-003.stampede2.tacc.utexas.edu
+MPI proc 108 host: c455-003.stampede2.tacc.utexas.edu
+MPI proc 109 host: c455-003.stampede2.tacc.utexas.edu
+MPI proc 110 host: c455-003.stampede2.tacc.utexas.edu
+MPI proc 111 host: c455-003.stampede2.tacc.utexas.edu
+MPI proc 112 host: c455-003.stampede2.tacc.utexas.edu
+MPI proc 113 host: c455-003.stampede2.tacc.utexas.edu
+MPI proc 114 host: c455-003.stampede2.tacc.utexas.edu
+MPI proc 115 host: c455-003.stampede2.tacc.utexas.edu
+MPI proc 116 host: c455-003.stampede2.tacc.utexas.edu
+MPI proc 117 host: c455-003.stampede2.tacc.utexas.edu
+MPI proc 118 host: c455-003.stampede2.tacc.utexas.edu
+MPI proc 119 host: c455-003.stampede2.tacc.utexas.edu
+MPI proc 120 host: c455-003.stampede2.tacc.utexas.edu
+MPI proc 121 host: c455-003.stampede2.tacc.utexas.edu
+MPI proc 122 host: c455-003.stampede2.tacc.utexas.edu
+MPI proc 123 host: c455-003.stampede2.tacc.utexas.edu
+MPI proc 124 host: c455-003.stampede2.tacc.utexas.edu
+MPI proc 125 host: c455-003.stampede2.tacc.utexas.edu
+MPI proc 126 host: c455-003.stampede2.tacc.utexas.edu
+MPI proc 127 host: c455-003.stampede2.tacc.utexas.edu
+MPI proc 128 host: c455-003.stampede2.tacc.utexas.edu
+MPI proc 129 host: c455-003.stampede2.tacc.utexas.edu
+MPI proc 130 host: c455-003.stampede2.tacc.utexas.edu
+MPI proc 131 host: c455-003.stampede2.tacc.utexas.edu
+MPI proc 132 host: c455-003.stampede2.tacc.utexas.edu
+MPI proc 133 host: c455-003.stampede2.tacc.utexas.edu
+MPI proc 134 host: c455-003.stampede2.tacc.utexas.edu
+MPI proc 135 host: c455-003.stampede2.tacc.utexas.edu
+MPI proc 136 host: c455-003.stampede2.tacc.utexas.edu
+MPI proc 137 host: c455-003.stampede2.tacc.utexas.edu
+MPI proc 138 host: c455-003.stampede2.tacc.utexas.edu
+MPI proc 139 host: c455-003.stampede2.tacc.utexas.edu
+MPI proc 140 host: c455-003.stampede2.tacc.utexas.edu
+MPI proc 141 host: c455-003.stampede2.tacc.utexas.edu
+MPI proc 142 host: c455-003.stampede2.tacc.utexas.edu
+MPI proc 143 host: c455-003.stampede2.tacc.utexas.edu
+MPI proc 144 host: c455-003.stampede2.tacc.utexas.edu
+MPI proc 145 host: c455-003.stampede2.tacc.utexas.edu
+MPI proc 146 host: c455-003.stampede2.tacc.utexas.edu
+MPI proc 147 host: c455-003.stampede2.tacc.utexas.edu
+MPI proc 148 host: c455-003.stampede2.tacc.utexas.edu
+MPI proc 149 host: c455-003.stampede2.tacc.utexas.edu
+MPI proc 150 host: c455-003.stampede2.tacc.utexas.edu
+MPI proc 151 host: c455-003.stampede2.tacc.utexas.edu
+MPI proc 152 host: c455-003.stampede2.tacc.utexas.edu
+MPI proc 153 host: c455-003.stampede2.tacc.utexas.edu
+MPI proc 154 host: c455-003.stampede2.tacc.utexas.edu
+MPI proc 155 host: c455-003.stampede2.tacc.utexas.edu
+MPI proc 156 host: c455-003.stampede2.tacc.utexas.edu
+MPI proc 157 host: c455-003.stampede2.tacc.utexas.edu
+MPI proc 158 host: c455-003.stampede2.tacc.utexas.edu
+MPI proc 159 host: c455-003.stampede2.tacc.utexas.edu
+MPI proc 160 host: c455-003.stampede2.tacc.utexas.edu
+MPI proc 161 host: c455-003.stampede2.tacc.utexas.edu
+MPI proc 162 host: c455-003.stampede2.tacc.utexas.edu
+MPI proc 163 host: c455-003.stampede2.tacc.utexas.edu
+MPI proc 164 host: c455-003.stampede2.tacc.utexas.edu
+MPI proc 165 host: c455-003.stampede2.tacc.utexas.edu
+MPI proc 166 host: c455-003.stampede2.tacc.utexas.edu
+MPI proc 167 host: c455-003.stampede2.tacc.utexas.edu
+MPI proc 168 host: c455-003.stampede2.tacc.utexas.edu
+MPI proc 169 host: c455-003.stampede2.tacc.utexas.edu
+MPI proc 170 host: c455-003.stampede2.tacc.utexas.edu
+MPI proc 171 host: c455-003.stampede2.tacc.utexas.edu
+MPI proc 172 host: c455-003.stampede2.tacc.utexas.edu
+MPI proc 173 host: c455-003.stampede2.tacc.utexas.edu
+MPI proc 174 host: c455-003.stampede2.tacc.utexas.edu
+MPI proc 175 host: c455-003.stampede2.tacc.utexas.edu
+MPI proc 176 host: c455-003.stampede2.tacc.utexas.edu
+MPI proc 177 host: c455-003.stampede2.tacc.utexas.edu
+MPI proc 178 host: c455-003.stampede2.tacc.utexas.edu
+MPI proc 179 host: c455-003.stampede2.tacc.utexas.edu
+MPI proc 180 host: c455-003.stampede2.tacc.utexas.edu
+MPI proc 181 host: c455-003.stampede2.tacc.utexas.edu
+MPI proc 182 host: c455-003.stampede2.tacc.utexas.edu
+MPI proc 183 host: c455-003.stampede2.tacc.utexas.edu
+MPI proc 184 host: c455-003.stampede2.tacc.utexas.edu
+MPI proc 185 host: c455-003.stampede2.tacc.utexas.edu
+MPI proc 186 host: c455-003.stampede2.tacc.utexas.edu
+MPI proc 187 host: c455-003.stampede2.tacc.utexas.edu
+MPI proc 188 host: c455-003.stampede2.tacc.utexas.edu
+MPI proc 189 host: c455-003.stampede2.tacc.utexas.edu
+MPI proc 190 host: c455-003.stampede2.tacc.utexas.edu
+MPI proc 191 host: c455-003.stampede2.tacc.utexas.edu
+MPI proc 192 host: c455-003.stampede2.tacc.utexas.edu
+MPI proc 193 host: c455-003.stampede2.tacc.utexas.edu
+MPI proc 194 host: c455-003.stampede2.tacc.utexas.edu
+MPI proc 195 host: c455-003.stampede2.tacc.utexas.edu
+MPI proc 196 host: c455-003.stampede2.tacc.utexas.edu
+MPI proc 197 host: c455-003.stampede2.tacc.utexas.edu
+MPI proc 198 host: c455-003.stampede2.tacc.utexas.edu
+MPI proc 199 host: c455-003.stampede2.tacc.utexas.edu
+MPI proc 200 host: c455-003.stampede2.tacc.utexas.edu
+MPI proc 201 host: c455-003.stampede2.tacc.utexas.edu
+MPI proc 202 host: c455-003.stampede2.tacc.utexas.edu
+MPI proc 203 host: c455-003.stampede2.tacc.utexas.edu
+MPI proc 204 host: c455-003.stampede2.tacc.utexas.edu
+MPI proc 205 host: c455-003.stampede2.tacc.utexas.edu
+MPI proc 206 host: c455-003.stampede2.tacc.utexas.edu
+MPI proc 207 host: c455-003.stampede2.tacc.utexas.edu
+MPI proc 208 host: c455-003.stampede2.tacc.utexas.edu
+MPI proc 209 host: c455-003.stampede2.tacc.utexas.edu
+MPI proc 210 host: c455-003.stampede2.tacc.utexas.edu
+MPI proc 211 host: c455-003.stampede2.tacc.utexas.edu
+MPI proc 212 host: c455-003.stampede2.tacc.utexas.edu
+MPI proc 213 host: c455-003.stampede2.tacc.utexas.edu
+MPI proc 214 host: c455-003.stampede2.tacc.utexas.edu
+MPI proc 215 host: c455-003.stampede2.tacc.utexas.edu
+MPI proc 216 host: c455-003.stampede2.tacc.utexas.edu
+MPI proc 217 host: c455-003.stampede2.tacc.utexas.edu
+MPI proc 218 host: c455-003.stampede2.tacc.utexas.edu
+MPI proc 219 host: c455-003.stampede2.tacc.utexas.edu
+MPI proc 220 host: c455-003.stampede2.tacc.utexas.edu
+MPI proc 221 host: c455-003.stampede2.tacc.utexas.edu
+MPI proc 222 host: c455-003.stampede2.tacc.utexas.edu
+MPI proc 223 host: c455-003.stampede2.tacc.utexas.edu
+MPI proc 224 host: c455-003.stampede2.tacc.utexas.edu
+MPI proc 225 host: c455-003.stampede2.tacc.utexas.edu
+MPI proc 226 host: c455-003.stampede2.tacc.utexas.edu
+MPI proc 227 host: c455-003.stampede2.tacc.utexas.edu
+MPI proc 228 host: c455-003.stampede2.tacc.utexas.edu
+MPI proc 229 host: c455-003.stampede2.tacc.utexas.edu
+MPI proc 230 host: c455-003.stampede2.tacc.utexas.edu
+MPI proc 231 host: c455-003.stampede2.tacc.utexas.edu
+MPI proc 232 host: c455-003.stampede2.tacc.utexas.edu
+MPI proc 233 host: c455-003.stampede2.tacc.utexas.edu
+MPI proc 234 host: c455-003.stampede2.tacc.utexas.edu
+MPI proc 235 host: c455-003.stampede2.tacc.utexas.edu
+MPI proc 236 host: c455-003.stampede2.tacc.utexas.edu
+MPI proc 237 host: c455-003.stampede2.tacc.utexas.edu
+MPI proc 238 host: c455-003.stampede2.tacc.utexas.edu
+MPI proc 239 host: c455-003.stampede2.tacc.utexas.edu
+MPI proc 240 host: c455-003.stampede2.tacc.utexas.edu
+MPI proc 241 host: c455-003.stampede2.tacc.utexas.edu
+MPI proc 242 host: c455-003.stampede2.tacc.utexas.edu
+MPI proc 243 host: c455-003.stampede2.tacc.utexas.edu
+MPI proc 244 host: c455-003.stampede2.tacc.utexas.edu
+MPI proc 245 host: c455-003.stampede2.tacc.utexas.edu
+MPI proc 246 host: c455-003.stampede2.tacc.utexas.edu
+MPI proc 247 host: c455-003.stampede2.tacc.utexas.edu
+MPI proc 248 host: c455-003.stampede2.tacc.utexas.edu
+MPI proc 249 host: c455-003.stampede2.tacc.utexas.edu
+MPI proc 250 host: c455-003.stampede2.tacc.utexas.edu
+MPI proc 251 host: c455-003.stampede2.tacc.utexas.edu
+MPI proc 252 host: c455-003.stampede2.tacc.utexas.edu
+MPI proc 253 host: c455-003.stampede2.tacc.utexas.edu
+MPI proc 254 host: c455-003.stampede2.tacc.utexas.edu
+MPI proc 255 host: c455-003.stampede2.tacc.utexas.edu
+MPI proc 256 host: c455-003.stampede2.tacc.utexas.edu
+MPI proc 257 host: c455-003.stampede2.tacc.utexas.edu
+MPI proc 258 host: c455-003.stampede2.tacc.utexas.edu
+MPI proc 259 host: c455-003.stampede2.tacc.utexas.edu
+MPI proc 260 host: c455-003.stampede2.tacc.utexas.edu
+MPI proc 261 host: c455-003.stampede2.tacc.utexas.edu
+MPI proc 262 host: c455-003.stampede2.tacc.utexas.edu
+MPI proc 263 host: c455-003.stampede2.tacc.utexas.edu
+MPI proc 264 host: c455-003.stampede2.tacc.utexas.edu
+MPI proc 265 host: c455-003.stampede2.tacc.utexas.edu
+MPI proc 266 host: c455-003.stampede2.tacc.utexas.edu
+MPI proc 267 host: c455-003.stampede2.tacc.utexas.edu
+MPI proc 268 host: c455-003.stampede2.tacc.utexas.edu
+MPI proc 269 host: c455-003.stampede2.tacc.utexas.edu
+MPI proc 270 host: c455-003.stampede2.tacc.utexas.edu
+MPI proc 271 host: c455-003.stampede2.tacc.utexas.edu
+MPI Point-to-point test:
+ # Processes  | Message Size | Total Size   | Time         | B/s
+            4              8             16   +1.61860e-05   +9.88510e+05
+            4             64            128   +1.95238e-05   +6.55609e+06
+            4            512           1024   +1.95397e-04   +5.24061e+06
+            4           4096           8192   +2.17756e-05   +3.76202e+08
+            4          32768          65536   +4.62267e-05   +1.41771e+09
+            4         262144         524288   +2.09226e-04   +2.50585e+09
+            4        2097152        4194304   +1.17895e-03   +3.55765e+09
+            4       16777216       33554432   +9.31899e-03   +3.60065e+09
+           16              8             64   +1.29541e-05   +4.94053e+06
+           16             64            512   +1.02520e-05   +4.99415e+07
+           16            512           4096   +1.47025e-05   +2.78592e+08
+           16           4096          32768   +1.79874e-05   +1.82172e+09
+           16          32768         262144   +4.64122e-05   +5.64818e+09
+           16         262144        2097152   +3.26978e-04   +6.41374e+09
+           16        2097152       16777216   +2.66634e-03   +6.29222e+09
+           16       16777216      134217728   +2.56375e-02   +5.23522e+09
+           64              8            256   +1.45700e-05   +1.75703e+07
+           64             64           2048   +1.54442e-05   +1.32606e+08
+           64            512          16384   +2.16696e-05   +7.56082e+08
+           64           4096         131072   +1.57621e-05   +8.31563e+09
+           64          32768        1048576   +3.76966e-05   +2.78162e+10
+           64         262144        8388608   +6.58327e-04   +1.27423e+10
+           64        2097152       67108864   +1.38282e-02   +4.85304e+09
+           64       16777216      536870912   +2.39147e-01   +2.24494e+09
+          256              8           1024   +1.90205e-05   +5.38366e+07
+          256             64           8192   +1.17620e-05   +6.96481e+08
+          256            512          65536   +1.70867e-05   +3.83551e+09
+          256           4096         524288   +1.87556e-05   +2.79537e+10
+          256          32768        4194304   +4.67565e-05   +8.97052e+10
+          256         262144       33554432   +2.17295e-03   +1.54419e+10
+          256        2097152      268435456   +1.75031e-01   +1.53365e+09
