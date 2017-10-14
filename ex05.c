@@ -58,13 +58,13 @@ int maxTime(MPI_Comm comm, double myTime, double *maxTime_p)
 {
   /* TODO: take the times from all processes and compute the maximum,
    * storing the result on process 0 */
-  double *recvbuf = (double*)malloc(100*sizeof(double));
+  double *recvbuf = (double*)malloc(10000*sizeof(double));
   double maxtime = 0.0;
   int i;
-  for (i = 0; i < 100; i++){ recvbuf[i] = -1.0; }
+  for (i = 0; i < 10000; i++){ recvbuf[i] = -1.0; }
   MPI_Gather(&myTime, 1, MPI_DOUBLE, recvbuf, 1, MPI_DOUBLE, 0, comm);
 
-  for (i = 0; i < 100; i++){
+  for (i = 0; i < 10000; i++){
     if (recvbuf[i] && recvbuf[i] > maxtime){
       maxtime = recvbuf[i];
     }
@@ -169,39 +169,39 @@ int main(int argc, char **argv)
   }
 
   /* === ONE TO ALL: Proc 0 broadcasts messages of varying lengths to all other processes === */
-  // MPI_LOG(rank, "MPI One-to-all broadcast test:\n"
-  //         " # Processes  | Message Size | Total Size   | Time         | B/s\n");
-  // for (int numComm = 4; numComm <= size; numComm *= 4) {
-  //   MPI_Comm subComm = MPI_COMM_NULL;
-  //
-  //   err = splitCommunicator(MPI_COMM_WORLD, numComm, &subComm); MPI_CHK(err);
-  //   MPI_LOG(rank,"5");
-  //   for (int numBytes = 8; numBytes <= maxSize; numBytes *= 8) {
-  //     double        timeAvg = 0.;
-  //     long long int totalNumBytes = numBytes * (numComm - 1);
-  //
-  //     for (int t = 0; t < numTests; t++) {
-  //       double tic = -1.;
-  //
-  //       err = startTime(comm, &tic); MPI_CHK(err);
-  //       if (rank < numComm) {
-  //         /* TODO: Use the subComm communicator to broadcast from rank 0 the
-  //          * first `numBytes` bytes of the `buffer` to the other processes. Store
-  //          * the results in the first `numBytes` bytes of the `buffer` on the
-  //          * receiving processes. */
-  //         err = MPI_Bcast(buffer, numBytes, MPI_BYTE, 0, subComm); MPI_CHK(err);
-  //       }
-  //       err = stopTime(tic, &tic); MPI_CHK(err);
-  //       if (t) {
-  //         timeAvg += tic;
-  //       }
-  //     }
-  //     timeAvg /= (numTests - 1);
-  //     err = maxTime(MPI_COMM_WORLD, timeAvg, &timeAvg); MPI_CHK(err);
-  //     MPI_LOG(rank, " %12d   %12d   %12lld   %+12.5e   %+12.5e\n", numComm, numBytes, totalNumBytes, timeAvg, totalNumBytes / timeAvg);
-  //   }
-  //   err = destroyCommunicator(&subComm); MPI_CHK(err);
-  // }
+  MPI_LOG(rank, "MPI One-to-all broadcast test:\n"
+          " # Processes  | Message Size | Total Size   | Time         | B/s\n");
+  for (int numComm = 4; numComm <= size; numComm *= 4) {
+    MPI_Comm subComm = MPI_COMM_NULL;
+
+    err = splitCommunicator(MPI_COMM_WORLD, numComm, &subComm); MPI_CHK(err);
+    MPI_LOG(rank,"5");
+    for (int numBytes = 8; numBytes <= maxSize; numBytes *= 8) {
+      double        timeAvg = 0.;
+      long long int totalNumBytes = numBytes * (numComm - 1);
+
+      for (int t = 0; t < numTests; t++) {
+        double tic = -1.;
+
+        err = startTime(comm, &tic); MPI_CHK(err);
+        if (rank < numComm) {
+          /* TODO: Use the subComm communicator to broadcast from rank 0 the
+           * first `numBytes` bytes of the `buffer` to the other processes. Store
+           * the results in the first `numBytes` bytes of the `buffer` on the
+           * receiving processes. */
+          err = MPI_Bcast(buffer, numBytes, MPI_BYTE, 0, subComm); MPI_CHK(err);
+        }
+        err = stopTime(tic, &tic); MPI_CHK(err);
+        if (t) {
+          timeAvg += tic;
+        }
+      }
+      timeAvg /= (numTests - 1);
+      err = maxTime(MPI_COMM_WORLD, timeAvg, &timeAvg); MPI_CHK(err);
+      MPI_LOG(rank, " %12d   %12d   %12lld   %+12.5e   %+12.5e\n", numComm, numBytes, totalNumBytes, timeAvg, totalNumBytes / timeAvg);
+    }
+    err = destroyCommunicator(&subComm); MPI_CHK(err);
+  }
 
   /* === ONE TO ALL: Proc 0 scatters messages of varying lengths to all other processes === */
   MPI_LOG(rank, "MPI One-to-all scatter test:\n"
