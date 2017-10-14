@@ -18,13 +18,9 @@ int splitCommunicator(MPI_Comm comm, int firstCommSize, MPI_Comm *subComm_p)
    * `notes/mpi/dmv` example.
    */
   int color, rank, err;
-  MPI_LOG(rank,"1");
   err = MPI_Comm_rank(comm, &rank); MPI_CHK(err);
-  MPI_LOG(rank,"2");
   color = (rank >= firstCommSize);
-  MPI_LOG(rank,"3");
   err = MPI_Comm_split(comm, color, rank, subComm_p); MPI_CHK(err);
-  MPI_LOG(rank,"4");
   return 0;
 }
 
@@ -175,7 +171,6 @@ int main(int argc, char **argv)
     MPI_Comm subComm = MPI_COMM_NULL;
 
     err = splitCommunicator(MPI_COMM_WORLD, numComm, &subComm); MPI_CHK(err);
-    MPI_LOG(rank,"5");
     for (int numBytes = 8; numBytes <= maxSize; numBytes *= 8) {
       double        timeAvg = 0.;
       long long int totalNumBytes = numBytes * (numComm - 1);
