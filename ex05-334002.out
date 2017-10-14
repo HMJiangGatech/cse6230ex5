@@ -1,0 +1,416 @@
+/home1/05215/tg845149/cse6230ex5
+c455-032.stampede2.tacc.utexas.edu
+Fri Oct 13 23:12:51 CDT 2017
+mpicc  -g -Wall -O3 -c -o ex05.o ex05.c
+mpicc -o ex05 ex05.o 
+ibrun tacc_affinity ./ex05 #/home1/05215/tg845149/cse6230ex5/ex05
+TACC:  Starting up job 334002 
+TACC:  Starting parallel tasks... 
+MPI Version: 3.1
+Intel(R) MPI Library 2017 Update 3 for Linux* OS
+
+MPI # Procs: 272
+MPI Wtime 1.50795e+09, precision 1e-06
+MPI Wtime is global
+MPI proc 0 host: c455-032.stampede2.tacc.utexas.edu
+MPI proc 1 host: c455-032.stampede2.tacc.utexas.edu
+MPI proc 2 host: c455-032.stampede2.tacc.utexas.edu
+MPI proc 3 host: c455-032.stampede2.tacc.utexas.edu
+MPI proc 4 host: c455-032.stampede2.tacc.utexas.edu
+MPI proc 5 host: c455-032.stampede2.tacc.utexas.edu
+MPI proc 6 host: c455-032.stampede2.tacc.utexas.edu
+MPI proc 7 host: c455-032.stampede2.tacc.utexas.edu
+MPI proc 8 host: c455-032.stampede2.tacc.utexas.edu
+MPI proc 9 host: c455-032.stampede2.tacc.utexas.edu
+MPI proc 10 host: c455-032.stampede2.tacc.utexas.edu
+MPI proc 11 host: c455-032.stampede2.tacc.utexas.edu
+MPI proc 12 host: c455-032.stampede2.tacc.utexas.edu
+MPI proc 13 host: c455-032.stampede2.tacc.utexas.edu
+MPI proc 14 host: c455-032.stampede2.tacc.utexas.edu
+MPI proc 15 host: c455-032.stampede2.tacc.utexas.edu
+MPI proc 16 host: c455-032.stampede2.tacc.utexas.edu
+MPI proc 17 host: c455-032.stampede2.tacc.utexas.edu
+MPI proc 18 host: c455-032.stampede2.tacc.utexas.edu
+MPI proc 19 host: c455-032.stampede2.tacc.utexas.edu
+MPI proc 20 host: c455-032.stampede2.tacc.utexas.edu
+MPI proc 21 host: c455-032.stampede2.tacc.utexas.edu
+MPI proc 22 host: c455-032.stampede2.tacc.utexas.edu
+MPI proc 23 host: c455-032.stampede2.tacc.utexas.edu
+MPI proc 24 host: c455-032.stampede2.tacc.utexas.edu
+MPI proc 25 host: c455-032.stampede2.tacc.utexas.edu
+MPI proc 26 host: c455-032.stampede2.tacc.utexas.edu
+MPI proc 27 host: c455-032.stampede2.tacc.utexas.edu
+MPI proc 28 host: c455-032.stampede2.tacc.utexas.edu
+MPI proc 29 host: c455-032.stampede2.tacc.utexas.edu
+MPI proc 30 host: c455-032.stampede2.tacc.utexas.edu
+MPI proc 31 host: c455-032.stampede2.tacc.utexas.edu
+MPI proc 32 host: c455-032.stampede2.tacc.utexas.edu
+MPI proc 33 host: c455-032.stampede2.tacc.utexas.edu
+MPI proc 34 host: c455-032.stampede2.tacc.utexas.edu
+MPI proc 35 host: c455-032.stampede2.tacc.utexas.edu
+MPI proc 36 host: c455-032.stampede2.tacc.utexas.edu
+MPI proc 37 host: c455-032.stampede2.tacc.utexas.edu
+MPI proc 38 host: c455-032.stampede2.tacc.utexas.edu
+MPI proc 39 host: c455-032.stampede2.tacc.utexas.edu
+MPI proc 40 host: c455-032.stampede2.tacc.utexas.edu
+MPI proc 41 host: c455-032.stampede2.tacc.utexas.edu
+MPI proc 42 host: c455-032.stampede2.tacc.utexas.edu
+MPI proc 43 host: c455-032.stampede2.tacc.utexas.edu
+MPI proc 44 host: c455-032.stampede2.tacc.utexas.edu
+MPI proc 45 host: c455-032.stampede2.tacc.utexas.edu
+MPI proc 46 host: c455-032.stampede2.tacc.utexas.edu
+MPI proc 47 host: c455-032.stampede2.tacc.utexas.edu
+MPI proc 48 host: c455-032.stampede2.tacc.utexas.edu
+MPI proc 49 host: c455-032.stampede2.tacc.utexas.edu
+MPI proc 50 host: c455-032.stampede2.tacc.utexas.edu
+MPI proc 51 host: c455-032.stampede2.tacc.utexas.edu
+MPI proc 52 host: c455-032.stampede2.tacc.utexas.edu
+MPI proc 53 host: c455-032.stampede2.tacc.utexas.edu
+MPI proc 54 host: c455-032.stampede2.tacc.utexas.edu
+MPI proc 55 host: c455-032.stampede2.tacc.utexas.edu
+MPI proc 56 host: c455-032.stampede2.tacc.utexas.edu
+MPI proc 57 host: c455-032.stampede2.tacc.utexas.edu
+MPI proc 58 host: c455-032.stampede2.tacc.utexas.edu
+MPI proc 59 host: c455-032.stampede2.tacc.utexas.edu
+MPI proc 60 host: c455-032.stampede2.tacc.utexas.edu
+MPI proc 61 host: c455-032.stampede2.tacc.utexas.edu
+MPI proc 62 host: c455-032.stampede2.tacc.utexas.edu
+MPI proc 63 host: c455-032.stampede2.tacc.utexas.edu
+MPI proc 64 host: c455-032.stampede2.tacc.utexas.edu
+MPI proc 65 host: c455-032.stampede2.tacc.utexas.edu
+MPI proc 66 host: c455-032.stampede2.tacc.utexas.edu
+MPI proc 67 host: c455-032.stampede2.tacc.utexas.edu
+MPI proc 68 host: c455-032.stampede2.tacc.utexas.edu
+MPI proc 69 host: c455-032.stampede2.tacc.utexas.edu
+MPI proc 70 host: c455-032.stampede2.tacc.utexas.edu
+MPI proc 71 host: c455-032.stampede2.tacc.utexas.edu
+MPI proc 72 host: c455-032.stampede2.tacc.utexas.edu
+MPI proc 73 host: c455-032.stampede2.tacc.utexas.edu
+MPI proc 74 host: c455-032.stampede2.tacc.utexas.edu
+MPI proc 75 host: c455-032.stampede2.tacc.utexas.edu
+MPI proc 76 host: c455-032.stampede2.tacc.utexas.edu
+MPI proc 77 host: c455-032.stampede2.tacc.utexas.edu
+MPI proc 78 host: c455-032.stampede2.tacc.utexas.edu
+MPI proc 79 host: c455-032.stampede2.tacc.utexas.edu
+MPI proc 80 host: c455-032.stampede2.tacc.utexas.edu
+MPI proc 81 host: c455-032.stampede2.tacc.utexas.edu
+MPI proc 82 host: c455-032.stampede2.tacc.utexas.edu
+MPI proc 83 host: c455-032.stampede2.tacc.utexas.edu
+MPI proc 84 host: c455-032.stampede2.tacc.utexas.edu
+MPI proc 85 host: c455-032.stampede2.tacc.utexas.edu
+MPI proc 86 host: c455-032.stampede2.tacc.utexas.edu
+MPI proc 87 host: c455-032.stampede2.tacc.utexas.edu
+MPI proc 88 host: c455-032.stampede2.tacc.utexas.edu
+MPI proc 89 host: c455-032.stampede2.tacc.utexas.edu
+MPI proc 90 host: c455-032.stampede2.tacc.utexas.edu
+MPI proc 91 host: c455-032.stampede2.tacc.utexas.edu
+MPI proc 92 host: c455-032.stampede2.tacc.utexas.edu
+MPI proc 93 host: c455-032.stampede2.tacc.utexas.edu
+MPI proc 94 host: c455-032.stampede2.tacc.utexas.edu
+MPI proc 95 host: c455-032.stampede2.tacc.utexas.edu
+MPI proc 96 host: c455-032.stampede2.tacc.utexas.edu
+MPI proc 97 host: c455-032.stampede2.tacc.utexas.edu
+MPI proc 98 host: c455-032.stampede2.tacc.utexas.edu
+MPI proc 99 host: c455-032.stampede2.tacc.utexas.edu
+MPI proc 100 host: c455-032.stampede2.tacc.utexas.edu
+MPI proc 101 host: c455-032.stampede2.tacc.utexas.edu
+MPI proc 102 host: c455-032.stampede2.tacc.utexas.edu
+MPI proc 103 host: c455-032.stampede2.tacc.utexas.edu
+MPI proc 104 host: c455-032.stampede2.tacc.utexas.edu
+MPI proc 105 host: c455-032.stampede2.tacc.utexas.edu
+MPI proc 106 host: c455-032.stampede2.tacc.utexas.edu
+MPI proc 107 host: c455-032.stampede2.tacc.utexas.edu
+MPI proc 108 host: c455-032.stampede2.tacc.utexas.edu
+MPI proc 109 host: c455-032.stampede2.tacc.utexas.edu
+MPI proc 110 host: c455-032.stampede2.tacc.utexas.edu
+MPI proc 111 host: c455-032.stampede2.tacc.utexas.edu
+MPI proc 112 host: c455-032.stampede2.tacc.utexas.edu
+MPI proc 113 host: c455-032.stampede2.tacc.utexas.edu
+MPI proc 114 host: c455-032.stampede2.tacc.utexas.edu
+MPI proc 115 host: c455-032.stampede2.tacc.utexas.edu
+MPI proc 116 host: c455-032.stampede2.tacc.utexas.edu
+MPI proc 117 host: c455-032.stampede2.tacc.utexas.edu
+MPI proc 118 host: c455-032.stampede2.tacc.utexas.edu
+MPI proc 119 host: c455-032.stampede2.tacc.utexas.edu
+MPI proc 120 host: c455-032.stampede2.tacc.utexas.edu
+MPI proc 121 host: c455-032.stampede2.tacc.utexas.edu
+MPI proc 122 host: c455-032.stampede2.tacc.utexas.edu
+MPI proc 123 host: c455-032.stampede2.tacc.utexas.edu
+MPI proc 124 host: c455-032.stampede2.tacc.utexas.edu
+MPI proc 125 host: c455-032.stampede2.tacc.utexas.edu
+MPI proc 126 host: c455-032.stampede2.tacc.utexas.edu
+MPI proc 127 host: c455-032.stampede2.tacc.utexas.edu
+MPI proc 128 host: c455-032.stampede2.tacc.utexas.edu
+MPI proc 129 host: c455-032.stampede2.tacc.utexas.edu
+MPI proc 130 host: c455-032.stampede2.tacc.utexas.edu
+MPI proc 131 host: c455-032.stampede2.tacc.utexas.edu
+MPI proc 132 host: c455-032.stampede2.tacc.utexas.edu
+MPI proc 133 host: c455-032.stampede2.tacc.utexas.edu
+MPI proc 134 host: c455-032.stampede2.tacc.utexas.edu
+MPI proc 135 host: c455-032.stampede2.tacc.utexas.edu
+MPI proc 136 host: c455-032.stampede2.tacc.utexas.edu
+MPI proc 137 host: c455-032.stampede2.tacc.utexas.edu
+MPI proc 138 host: c455-032.stampede2.tacc.utexas.edu
+MPI proc 139 host: c455-032.stampede2.tacc.utexas.edu
+MPI proc 140 host: c455-032.stampede2.tacc.utexas.edu
+MPI proc 141 host: c455-032.stampede2.tacc.utexas.edu
+MPI proc 142 host: c455-032.stampede2.tacc.utexas.edu
+MPI proc 143 host: c455-032.stampede2.tacc.utexas.edu
+MPI proc 144 host: c455-032.stampede2.tacc.utexas.edu
+MPI proc 145 host: c455-032.stampede2.tacc.utexas.edu
+MPI proc 146 host: c455-032.stampede2.tacc.utexas.edu
+MPI proc 147 host: c455-032.stampede2.tacc.utexas.edu
+MPI proc 148 host: c455-032.stampede2.tacc.utexas.edu
+MPI proc 149 host: c455-032.stampede2.tacc.utexas.edu
+MPI proc 150 host: c455-032.stampede2.tacc.utexas.edu
+MPI proc 151 host: c455-032.stampede2.tacc.utexas.edu
+MPI proc 152 host: c455-032.stampede2.tacc.utexas.edu
+MPI proc 153 host: c455-032.stampede2.tacc.utexas.edu
+MPI proc 154 host: c455-032.stampede2.tacc.utexas.edu
+MPI proc 155 host: c455-032.stampede2.tacc.utexas.edu
+MPI proc 156 host: c455-032.stampede2.tacc.utexas.edu
+MPI proc 157 host: c455-032.stampede2.tacc.utexas.edu
+MPI proc 158 host: c455-032.stampede2.tacc.utexas.edu
+MPI proc 159 host: c455-032.stampede2.tacc.utexas.edu
+MPI proc 160 host: c455-032.stampede2.tacc.utexas.edu
+MPI proc 161 host: c455-032.stampede2.tacc.utexas.edu
+MPI proc 162 host: c455-032.stampede2.tacc.utexas.edu
+MPI proc 163 host: c455-032.stampede2.tacc.utexas.edu
+MPI proc 164 host: c455-032.stampede2.tacc.utexas.edu
+MPI proc 165 host: c455-032.stampede2.tacc.utexas.edu
+MPI proc 166 host: c455-032.stampede2.tacc.utexas.edu
+MPI proc 167 host: c455-032.stampede2.tacc.utexas.edu
+MPI proc 168 host: c455-032.stampede2.tacc.utexas.edu
+MPI proc 169 host: c455-032.stampede2.tacc.utexas.edu
+MPI proc 170 host: c455-032.stampede2.tacc.utexas.edu
+MPI proc 171 host: c455-032.stampede2.tacc.utexas.edu
+MPI proc 172 host: c455-032.stampede2.tacc.utexas.edu
+MPI proc 173 host: c455-032.stampede2.tacc.utexas.edu
+MPI proc 174 host: c455-032.stampede2.tacc.utexas.edu
+MPI proc 175 host: c455-032.stampede2.tacc.utexas.edu
+MPI proc 176 host: c455-032.stampede2.tacc.utexas.edu
+MPI proc 177 host: c455-032.stampede2.tacc.utexas.edu
+MPI proc 178 host: c455-032.stampede2.tacc.utexas.edu
+MPI proc 179 host: c455-032.stampede2.tacc.utexas.edu
+MPI proc 180 host: c455-032.stampede2.tacc.utexas.edu
+MPI proc 181 host: c455-032.stampede2.tacc.utexas.edu
+MPI proc 182 host: c455-032.stampede2.tacc.utexas.edu
+MPI proc 183 host: c455-032.stampede2.tacc.utexas.edu
+MPI proc 184 host: c455-032.stampede2.tacc.utexas.edu
+MPI proc 185 host: c455-032.stampede2.tacc.utexas.edu
+MPI proc 186 host: c455-032.stampede2.tacc.utexas.edu
+MPI proc 187 host: c455-032.stampede2.tacc.utexas.edu
+MPI proc 188 host: c455-032.stampede2.tacc.utexas.edu
+MPI proc 189 host: c455-032.stampede2.tacc.utexas.edu
+MPI proc 190 host: c455-032.stampede2.tacc.utexas.edu
+MPI proc 191 host: c455-032.stampede2.tacc.utexas.edu
+MPI proc 192 host: c455-032.stampede2.tacc.utexas.edu
+MPI proc 193 host: c455-032.stampede2.tacc.utexas.edu
+MPI proc 194 host: c455-032.stampede2.tacc.utexas.edu
+MPI proc 195 host: c455-032.stampede2.tacc.utexas.edu
+MPI proc 196 host: c455-032.stampede2.tacc.utexas.edu
+MPI proc 197 host: c455-032.stampede2.tacc.utexas.edu
+MPI proc 198 host: c455-032.stampede2.tacc.utexas.edu
+MPI proc 199 host: c455-032.stampede2.tacc.utexas.edu
+MPI proc 200 host: c455-032.stampede2.tacc.utexas.edu
+MPI proc 201 host: c455-032.stampede2.tacc.utexas.edu
+MPI proc 202 host: c455-032.stampede2.tacc.utexas.edu
+MPI proc 203 host: c455-032.stampede2.tacc.utexas.edu
+MPI proc 204 host: c455-032.stampede2.tacc.utexas.edu
+MPI proc 205 host: c455-032.stampede2.tacc.utexas.edu
+MPI proc 206 host: c455-032.stampede2.tacc.utexas.edu
+MPI proc 207 host: c455-032.stampede2.tacc.utexas.edu
+MPI proc 208 host: c455-032.stampede2.tacc.utexas.edu
+MPI proc 209 host: c455-032.stampede2.tacc.utexas.edu
+MPI proc 210 host: c455-032.stampede2.tacc.utexas.edu
+MPI proc 211 host: c455-032.stampede2.tacc.utexas.edu
+MPI proc 212 host: c455-032.stampede2.tacc.utexas.edu
+MPI proc 213 host: c455-032.stampede2.tacc.utexas.edu
+MPI proc 214 host: c455-032.stampede2.tacc.utexas.edu
+MPI proc 215 host: c455-032.stampede2.tacc.utexas.edu
+MPI proc 216 host: c455-032.stampede2.tacc.utexas.edu
+MPI proc 217 host: c455-032.stampede2.tacc.utexas.edu
+MPI proc 218 host: c455-032.stampede2.tacc.utexas.edu
+MPI proc 219 host: c455-032.stampede2.tacc.utexas.edu
+MPI proc 220 host: c455-032.stampede2.tacc.utexas.edu
+MPI proc 221 host: c455-032.stampede2.tacc.utexas.edu
+MPI proc 222 host: c455-032.stampede2.tacc.utexas.edu
+MPI proc 223 host: c455-032.stampede2.tacc.utexas.edu
+MPI proc 224 host: c455-032.stampede2.tacc.utexas.edu
+MPI proc 225 host: c455-032.stampede2.tacc.utexas.edu
+MPI proc 226 host: c455-032.stampede2.tacc.utexas.edu
+MPI proc 227 host: c455-032.stampede2.tacc.utexas.edu
+MPI proc 228 host: c455-032.stampede2.tacc.utexas.edu
+MPI proc 229 host: c455-032.stampede2.tacc.utexas.edu
+MPI proc 230 host: c455-032.stampede2.tacc.utexas.edu
+MPI proc 231 host: c455-032.stampede2.tacc.utexas.edu
+MPI proc 232 host: c455-032.stampede2.tacc.utexas.edu
+MPI proc 233 host: c455-032.stampede2.tacc.utexas.edu
+MPI proc 234 host: c455-032.stampede2.tacc.utexas.edu
+MPI proc 235 host: c455-032.stampede2.tacc.utexas.edu
+MPI proc 236 host: c455-032.stampede2.tacc.utexas.edu
+MPI proc 237 host: c455-032.stampede2.tacc.utexas.edu
+MPI proc 238 host: c455-032.stampede2.tacc.utexas.edu
+MPI proc 239 host: c455-032.stampede2.tacc.utexas.edu
+MPI proc 240 host: c455-032.stampede2.tacc.utexas.edu
+MPI proc 241 host: c455-032.stampede2.tacc.utexas.edu
+MPI proc 242 host: c455-032.stampede2.tacc.utexas.edu
+MPI proc 243 host: c455-032.stampede2.tacc.utexas.edu
+MPI proc 244 host: c455-032.stampede2.tacc.utexas.edu
+MPI proc 245 host: c455-032.stampede2.tacc.utexas.edu
+MPI proc 246 host: c455-032.stampede2.tacc.utexas.edu
+MPI proc 247 host: c455-032.stampede2.tacc.utexas.edu
+MPI proc 248 host: c455-032.stampede2.tacc.utexas.edu
+MPI proc 249 host: c455-032.stampede2.tacc.utexas.edu
+MPI proc 250 host: c455-032.stampede2.tacc.utexas.edu
+MPI proc 251 host: c455-032.stampede2.tacc.utexas.edu
+MPI proc 252 host: c455-032.stampede2.tacc.utexas.edu
+MPI proc 253 host: c455-032.stampede2.tacc.utexas.edu
+MPI proc 254 host: c455-032.stampede2.tacc.utexas.edu
+MPI proc 255 host: c455-032.stampede2.tacc.utexas.edu
+MPI proc 256 host: c455-032.stampede2.tacc.utexas.edu
+MPI proc 257 host: c455-032.stampede2.tacc.utexas.edu
+MPI proc 258 host: c455-032.stampede2.tacc.utexas.edu
+MPI proc 259 host: c455-032.stampede2.tacc.utexas.edu
+MPI proc 260 host: c455-032.stampede2.tacc.utexas.edu
+MPI proc 261 host: c455-032.stampede2.tacc.utexas.edu
+MPI proc 262 host: c455-032.stampede2.tacc.utexas.edu
+MPI proc 263 host: c455-032.stampede2.tacc.utexas.edu
+MPI proc 264 host: c455-032.stampede2.tacc.utexas.edu
+MPI proc 265 host: c455-032.stampede2.tacc.utexas.edu
+MPI proc 266 host: c455-032.stampede2.tacc.utexas.edu
+MPI proc 267 host: c455-032.stampede2.tacc.utexas.edu
+MPI proc 268 host: c455-032.stampede2.tacc.utexas.edu
+MPI proc 269 host: c455-032.stampede2.tacc.utexas.edu
+MPI proc 270 host: c455-032.stampede2.tacc.utexas.edu
+MPI proc 271 host: c455-032.stampede2.tacc.utexas.edu
+MPI Point-to-point test:
+ # Processes  | Message Size | Total Size   | Time         | B/s
+            4              8             16   +1.31130e-05   +1.22016e+06
+            4             64            128   +1.47290e-05   +8.69036e+06
+            4            512           1024   +1.35104e-05   +7.57935e+07
+            4           4096           8192   +2.18550e-05   +3.74834e+08
+            4          32768          65536   +4.28624e-05   +1.52899e+09
+           16              8             64   +2.03451e-05   +3.14573e+06
+           16             64            512   +1.43316e-05   +3.57252e+07
+           16            512           4096   +2.38683e-05   +1.71608e+08
+           16           4096          32768   +1.85172e-05   +1.76960e+09
+           16          32768         262144   +5.87304e-05   +4.46351e+09
+           64              8            256   +1.49674e-05   +1.71039e+07
+           64             64           2048   +2.00007e-05   +1.02397e+08
+           64            512          16384   +2.03186e-05   +8.06356e+08
+           64           4096         131072   +2.18815e-05   +5.99008e+09
+           64          32768        1048576   +5.48363e-05   +1.91219e+10
+          256              8           1024   +1.37223e-05   +7.46230e+07
+          256             64           8192   +1.80933e-05   +4.52764e+08
+          256            512          65536   +1.85437e-05   +3.53414e+09
+          256           4096         524288   +2.65439e-05   +1.97517e+10
+          256          32768        4194304   +6.03729e-05   +6.94733e+10
+MPI One-to-all broadcast test:
+ # Processes  | Message Size | Total Size   | Time         | B/s
+            4              8             24   +1.29011e-05   +1.86031e+06
+            4             64            192   +8.68903e-06   +2.20968e+07
+            4            512           1536   +9.40429e-06   +1.63330e+08
+            4           4096          12288   +1.18944e-05   +1.03309e+09
+            4          32768          98304   +2.55903e-05   +3.84146e+09
+           16              8            120   +2.91930e-05   +4.11057e+06
+           16             64            960   +1.73516e-05   +5.53264e+07
+           16            512           7680   +1.97623e-05   +3.88620e+08
+           16           4096          61440   +2.78685e-05   +2.20464e+09
+           16          32768         491520   +5.20282e-05   +9.44718e+09
+           64              8            504   +2.57492e-05   +1.95734e+07
+           64             64           4032   +3.00672e-05   +1.34099e+08
+           64            512          32256   +3.22130e-05   +1.00133e+09
+           64           4096         258048   +3.48091e-05   +7.41323e+09
+           64          32768        2064384   +5.74324e-05   +3.59446e+10
+          256              8           2040   +4.86904e-05   +4.18974e+07
+          256             64          16320   +4.47962e-05   +3.64317e+08
+          256            512         130560   +5.77238e-05   +2.26181e+09
+          256           4096        1044480   +6.45320e-05   +1.61855e+10
+          256          32768        8355840   +9.40164e-05   +8.88764e+10
+MPI One-to-all scatter test:
+ # Processes  | Message Size | Total Size   | Time         | B/s
+            4              8             24   +2.33650e-05   +1.02718e+06
+            4             64            192   +1.70072e-05   +1.12893e+07
+           16              8            120   +2.87957e-05   +4.16729e+06
+           16             64            960   +2.99878e-05   +3.20131e+07
+           64              8            504   +5.39356e-05   +9.34448e+06
+           64             64           4032   +5.34323e-05   +7.54600e+07
+          256              8           2040   +7.99762e-05   +2.55076e+07
+          256             64          16320   +8.62281e-05   +1.89266e+08
+MPI All-to-one reduce test:
+ # Processes  | Message Size | Total Size   | Time         | B/s
+            4              8             24   +1.08348e-05   +2.21508e+06
+            4             64            192   +1.34309e-05   +1.42954e+07
+            4            512           1536   +2.71267e-05   +5.66231e+07
+            4           4096          12288   +3.66370e-05   +3.35399e+08
+            4          32768          98304   +1.18097e-04   +8.32403e+08
+           16              8            120   +2.46896e-05   +4.86035e+06
+           16             64            960   +2.01331e-05   +4.76826e+07
+           16            512           7680   +3.15507e-05   +2.43418e+08
+           16           4096          61440   +4.56704e-05   +1.34529e+09
+           16          32768         491520   +3.08567e-04   +1.59291e+09
+           64              8            504   +3.14713e-05   +1.60146e+07
+           64             64           4032   +3.51535e-05   +1.14697e+08
+           64            512          32256   +5.48628e-05   +5.87940e+08
+           64           4096         258048   +5.74589e-05   +4.49100e+09
+           64          32768        2064384   +3.58846e-04   +5.75283e+09
+          256              8           2040   +4.82665e-05   +4.22653e+07
+          256             64          16320   +7.02540e-05   +2.32300e+08
+          256            512         130560   +6.74725e-05   +1.93501e+09
+          256           4096        1044480   +9.34866e-05   +1.11725e+10
+          256          32768        8355840   +7.16527e-04   +1.16616e+10
+MPI All-to-one gather test:
+ # Processes  | Message Size | Total Size   | Time         | B/s
+            4              8             24   +2.16166e-05   +1.11026e+06
+            4             64            192   +2.20935e-05   +8.69036e+06
+           16              8            120   +3.52330e-05   +3.40590e+06
+           16             64            960   +3.02527e-05   +3.17327e+07
+           64              8            504   +4.69685e-05   +1.07306e+07
+           64             64           4032   +4.39220e-05   +9.17991e+07
+          256              8           2040   +8.63075e-05   +2.36364e+07
+          256             64          16320   +7.59496e-05   +2.14879e+08
+MPI All-to-all reduce test:
+ # Processes  | Message Size | Total Size   | Time         | B/s
+            4              8             48   +1.43316e-05   +3.34924e+06
+            4             64            384   +2.26498e-05   +1.69538e+07
+            4            512           3072   +2.94050e-05   +1.04472e+08
+            4           4096          24576   +2.67294e-05   +9.19438e+08
+            4          32768         196608   +1.05884e-04   +1.85682e+09
+           16              8            240   +2.93255e-05   +8.18401e+06
+           16             64           1920   +4.21206e-05   +4.55834e+07
+           16            512          15360   +3.48886e-05   +4.40259e+08
+           16           4096         122880   +5.88364e-05   +2.08850e+09
+           16          32768         983040   +2.34577e-04   +4.19069e+09
+           64              8           1008   +3.38819e-05   +2.97504e+07
+           64             64           8064   +4.18557e-05   +1.92662e+08
+           64            512          64512   +6.45320e-05   +9.99691e+08
+           64           4096         516096   +9.82020e-05   +5.25545e+09
+           64          32768        4128768   +4.65128e-04   +8.87662e+09
+          256              8           4080   +5.92338e-05   +6.88796e+07
+          256             64          32640   +6.86646e-05   +4.75354e+08
+          256            512         261120   +8.55658e-05   +3.05169e+09
+          256           4096        2088960   +1.32243e-04   +1.57964e+10
+          256          32768       16711680   +7.77615e-04   +2.14909e+10
+MPI All-to-all gather test:
+ # Processes  | Message Size | Total Size   | Time         | B/s
+            4              8             96   +2.52194e-05   +3.80660e+06
+            4             64            768   +1.83052e-05   +4.19552e+07
+           16              8           1920   +5.19753e-05   +3.69407e+07
+           16             64          15360   +4.59883e-05   +3.33998e+08
+           64              8          32256   +6.81612e-05   +4.73231e+08
+           64             64         258048   +7.65589e-05   +3.37058e+09
+          256              8         522240   +1.21117e-04   +4.31188e+09
+          256             64        4177920   +7.83179e-04   +5.33457e+09
+MPI All-to-all transpose test:
+ # Processes  | Message Size | Total Size   | Time         | B/s
+            4              8             72   +5.08096e-05   +1.41705e+06
+            4             64            576   +4.51141e-05   +1.27676e+07
+           16              8           1800   +2.83586e-04   +6.34729e+06
+           16             64          14400   +2.17809e-04   +6.61131e+07
+           64              8          31752   +1.42312e-03   +2.23115e+07
+           64             64         254016   +1.24545e-03   +2.03956e+08
+          256              8         520200   +6.85101e-03   +7.59304e+07
+          256             64        4161600   +5.98603e-03   +6.95219e+08
+TACC:  Shutdown complete. Exiting. 
+Fri Oct 13 23:13:20 CDT 2017
