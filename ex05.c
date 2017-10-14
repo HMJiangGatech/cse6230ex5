@@ -256,9 +256,9 @@ int main(int argc, char **argv)
            * MPI_IN_PLACE).
            */
           if(rank == 0){
-            err = MPI_Reduce(buffer, MPI_IN_PLACE, numBytes, MPI_CHAR, MPI_MIN, 0, subComm); MPI_CHK(err);
+            err = MPI_Reduce(MPI_IN_PLACE, buffer, numBytes, MPI_CHAR, MPI_MIN, 0, subComm); MPI_CHK(err);
           }
-          err = MPI_Reduce(buffer, buffer2, numBytes, MPI_CHAR, MPI_MIN, 0, subComm); MPI_CHK(err);
+          err = MPI_Reduce(buffer, buffer, numBytes, MPI_CHAR, MPI_MIN, 0, subComm); MPI_CHK(err);
         }
         err = stopTime(tic, &tic); MPI_CHK(err);
         if (t) {
