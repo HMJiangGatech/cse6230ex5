@@ -54,13 +54,13 @@ int maxTime(MPI_Comm comm, double myTime, double *maxTime_p)
 {
   /* TODO: take the times from all processes and compute the maximum,
    * storing the result on process 0 */
-  double *recvbuf = (double*)malloc(257*sizeof(double));
+  double *recvbuf = (double*)malloc(300*sizeof(double));
   double maxtime = 0.0;
   int i;
-  for (i = 0; i < 257; i++){ recvbuf[i] = -1.0; }
+  for (i = 0; i < 100; i++){ recvbuf[i] = -1.0; }
   MPI_Gather(&myTime, 1, MPI_DOUBLE, recvbuf, 1, MPI_DOUBLE, 0, comm);
 
-  for (i = 0; i < 257; i++){
+  for (i = 0; i < 100; i++){
     if (recvbuf[i] && recvbuf[i] > maxtime){
       maxtime = recvbuf[i];
     }
@@ -74,7 +74,7 @@ int main(int argc, char **argv)
   MPI_Comm comm;
   int      err;
   int      size, rank;
-  int      maxSize = 1 << 16;
+  int      maxSize = 1 << 24;
   int      maxCollectiveSize;
   int      numTests = 10;
   char     *buffer;
@@ -255,11 +255,10 @@ int main(int argc, char **argv)
            * results in `buffer` on process 0 (HINT: look up the proper usage of
            * MPI_IN_PLACE).
            */
-          if(rank == 0){
-            err = MPI_Reduce(MPI_IN_PLACE, buffer, numBytes, MPI_CHAR, MPI_MIN, 0, subComm); MPI_CHK(err);
-          }else{
-            err = MPI_Reduce(buffer, buffer, numBytes, MPI_CHAR, MPI_MIN, 0, subComm); MPI_CHK(err);
-          }
+          // if(rank == 0){
+          //   err = MPI_Reduce(buffer, MPI_IN_PLACE, numBytes, MPI_CHAR, MPI_MIN, 0, subComm); MPI_CHK(err);
+          // }
+          err = MPI_Reduce(buffer, buffer2, numBytes, MPI_CHAR, MPI_MIN, 0, subComm); MPI_CHK(err);
         }
         err = stopTime(tic, &tic); MPI_CHK(err);
         if (t) {
