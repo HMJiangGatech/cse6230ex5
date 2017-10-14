@@ -255,9 +255,9 @@ int main(int argc, char **argv)
            * results in `buffer` on process 0 (HINT: look up the proper usage of
            * MPI_IN_PLACE).
            */
-          // if(rank == 0){
-          //   err = MPI_Reduce(buffer, MPI_IN_PLACE, numBytes, MPI_CHAR, MPI_MIN, 0, subComm); MPI_CHK(err);
-          // }
+          if(rank == 0){
+            err = MPI_Reduce(buffer, MPI_IN_PLACE, numBytes, MPI_CHAR, MPI_MIN, 0, subComm); MPI_CHK(err);
+          }
           err = MPI_Reduce(buffer, buffer2, numBytes, MPI_CHAR, MPI_MIN, 0, subComm); MPI_CHK(err);
         }
         err = stopTime(tic, &tic); MPI_CHK(err);
