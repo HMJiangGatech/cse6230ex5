@@ -54,13 +54,13 @@ int maxTime(MPI_Comm comm, double myTime, double *maxTime_p)
 {
   /* TODO: take the times from all processes and compute the maximum,
    * storing the result on process 0 */
-  double *recvbuf = (double*)malloc(10000*sizeof(double));
+  double *recvbuf = (double*)malloc(300*sizeof(double));
   double maxtime = 0.0;
   int i;
-  for (i = 0; i < 10000; i++){ recvbuf[i] = -1.0; }
+  for (i = 0; i < 300; i++){ recvbuf[i] = -1.0; }
   MPI_Gather(&myTime, 1, MPI_DOUBLE, recvbuf, 1, MPI_DOUBLE, 0, comm);
 
-  for (i = 0; i < 10000; i++){
+  for (i = 0; i < 300; i++){
     if (recvbuf[i] && recvbuf[i] > maxtime){
       maxtime = recvbuf[i];
     }
